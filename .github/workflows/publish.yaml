@@ -22,6 +22,6 @@ jobs:
         run: |
           git config --global user.name Docs Deploy
           git config --global user.email docs@deploy.com
-          cd tomodo-docs
+          cd tomodo-documentation
           mike deploy --push --update-aliases "${{  github.ref_name }}" latest
           mike set-default --push latest
