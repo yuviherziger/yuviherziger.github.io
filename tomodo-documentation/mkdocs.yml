@@ -1,0 +1,48 @@
+site_name: tomodo
+nav:
+  - Welcome to tomodo: index.md
+  - Installation: installation.md
+  - CLI Reference:
+      - provision: cli/provision.md
+      - list: cli/list.md
+      - describe: cli/describe.md
+      - stop: cli/stop.md
+      - start: cli/start.md
+      - remove: cli/remove.md
+      - tags: cli/tags.md
+  - Examples: examples.md
+  - Programmatic Usage: programmatic.md
+  - Disclaimer: disclaimer.md
+extra:
+  version:
+    provider: mike
+markdown_extensions:
+  - tables
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: "!!python/name:pymdownx.superfences.fence_code_format"
+repo_url: https://github.com/yuviherziger/tomodo
+repo_name: yuviherziger/tomodo
+theme:
+  icon:
+    repo: fontawesome/brands/github
+  name: material
+  logo: assets/img/logo.png
+  favicon: assets/img/favicon.ico
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+      primary: black
+      accent: red
+    - scheme: slate
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+      primary: black
+      accent: red

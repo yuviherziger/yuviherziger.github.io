@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "tomodo-documentation"
+version = "0.1.0"
+description = "Documentation Site for the tomodo project"
+authors = ["Yuvi Herziger <yuvi.herziger@mongodb.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+mike = "^2.0.0"
+mkdocs = "^1.5.3"
+mkdocs-material = "^9.5.17"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
