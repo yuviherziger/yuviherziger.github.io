@@ -2,6 +2,7 @@ name: Publish Documentation
 on:
   push:
     branches: ['v*']
+
 permissions:
   contents: write
 jobs:
