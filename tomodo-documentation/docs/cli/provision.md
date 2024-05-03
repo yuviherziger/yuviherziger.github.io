@@ -66,6 +66,18 @@ tomodo provision standalone
     tomodo provision standalone --name "mymongodb"
     ```
 
+**`--ephemeral`**
+
+- **Description:** Whether the deployment should be ephemeral and not persist data. 
+- **Type:** Flag
+- **Required:** No (default: `--no-ephemeral`)
+- **Example:**
+
+    ```shell
+    tomodo provision standalone --ephemeral
+    ```
+
+
 **`--network-name`**
 
 - **Description:** The Docker network to provision the deployment in; will create a new one or use an
@@ -156,6 +168,17 @@ tomodo provision replica-set
 
     ```shell
     tomodo provision replica-set --name "mymongodb"
+    ```
+
+**`--ephemeral`**
+
+- **Description:** Whether the deployment should be ephemeral and not persist data. 
+- **Type:** Flag
+- **Required:** No (default: `--no-ephemeral`)
+- **Example:**
+
+    ```shell
+    tomodo provision replica-set --ephemeral
     ```
 
 **`--replicas`**
@@ -270,6 +293,17 @@ tomodo provision sharded
 
     ```shell
     tomodo provision sharded --name "mymongodb"
+    ```
+
+**`--ephemeral`**
+
+- **Description:** Whether the deployment should be ephemeral and not persist data. 
+- **Type:** Flag
+- **Required:** No (default: `--no-ephemeral`)
+- **Example:**
+
+    ```shell
+    tomodo provision sharded --ephemeral
     ```
 
 **`--replicas`**

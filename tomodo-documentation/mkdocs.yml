@@ -12,6 +12,7 @@ nav:
       - tags: cli/tags.md
   - Examples: examples.md
   - Programmatic Usage: programmatic.md
+  - Changelog: changelog.md
   - Disclaimer: disclaimer.md
 extra:
   version:
