@@ -77,7 +77,7 @@ deployment: AtlasDeployment = provision_atlas_instance(
     port=27017,
     version="7.0",
     username="foo", password="bar",
-    image_repo="ghcr.io/yuviherziger/tomodo",
+    image_repo="ghcr.io/yuvalherziger/tomodo",
     image_tag="main",
     network_name="mongo_network"
 )
