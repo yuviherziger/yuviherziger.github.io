@@ -11,7 +11,7 @@
 You can install tomodo with [Homebrew](https://brew.sh/) by running the following commands:
 
 ```shell
-brew tap yuviherziger/homebrew-tomodo
+brew tap yuvalherziger/homebrew-tomodo
 brew install tomodo
 ```
 
@@ -45,7 +45,7 @@ If you have the [Poetry](https://python-poetry.org/) Python package manager inst
 the CLI the following way:
 
 ```bash
-git clone https://github.com/yuviherziger/tomodo.git
+git clone https://github.com/yuvalherziger/tomodo.git
 cd tomodo
 poetry shell
 poetry install
@@ -62,7 +62,7 @@ tomodo --help
 You can install the dependencies with pip using the following command:
 
 ```bash
-git clone https://github.com/yuviherziger/tomodo.git
+git clone https://github.com/yuvalherziger/tomodo.git
 cd tomodo
 pip install .
 ```
