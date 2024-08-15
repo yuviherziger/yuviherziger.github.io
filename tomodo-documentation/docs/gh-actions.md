@@ -38,6 +38,9 @@ jobs:
           MONGODB_URI: ${{ steps.tomodo.outputs.connection-string }}
 ```
 
+You can check out the example in [this repository](https://github.com/yuvalherziger/tomodo-action-example) to see
+how your unit tests can run against a local MongoDB Atlas instance.
+
 ## Action Input
 
 The action accepts the following parameters:
