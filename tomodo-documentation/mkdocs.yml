@@ -30,6 +30,8 @@ markdown_extensions:
 repo_url: https://github.com/yuvalherziger/tomodo
 repo_name: yuvalherziger/tomodo
 theme:
+  features:
+    - content.code.copy
   icon:
     repo: fontawesome/brands/github
   name: material
