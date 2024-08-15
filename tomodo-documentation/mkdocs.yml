@@ -10,6 +10,7 @@ nav:
       - start: cli/start.md
       - remove: cli/remove.md
       - tags: cli/tags.md
+  - GitHub Actions: gh-actions.md
   - Examples: examples.md
   - Programmatic Usage: programmatic.md
   - Changelog: changelog.md
