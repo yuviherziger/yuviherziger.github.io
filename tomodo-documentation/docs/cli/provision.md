@@ -373,28 +373,6 @@ tomodo provision sharded
     tomodo provision sharded --network-name "my-docker-net"
     ```
 
-**`--username`**
-
-- **Description:** Admin username; no authentication if not provided
-- **Type:** String
-- **Required:** No (default: `null`)
-- **Example:**
-
-    ```shell
-    tomodo provision sharded --username "foo" --password "bar"
-    ```
-
-**`--password`**
-
-- **Description:** Admin password; no authentication if not provided
-- **Type:** String
-- **Required:** No (default: `null`)
-- **Example:**
-
-    ```shell
-    tomodo provision sharded --username "foo" --password "bar"
-    ```
-
 ### tomodo provision atlas
 
 Provision a local MongoDB Atlas deployment
@@ -418,26 +396,26 @@ tomodo provision atlas
     tomodo provision atlas --port 27111
     ```
 
-**`--version`**
+**`--image-tag`**
 
 - **Description:** The MongoDB version to install
-- **Type:** String, Enum: `["6.0", "7.0"]`
-- **Required:** No (default: `ghcr.io/yuviherziger/tomodo`)
+- **Type:** String
+- **Required:** No (default: `latest`)
 - **Example:**
 
     ```shell
-    tomodo provision atlas --image-repo "ghcr.io/yuviherziger/tomodo"
+    tomodo provision atlas --image-tag "7"
     ```
 
 **`--image-repo`**
 
 - **Description:** The MongoDB Atlas image name/repo (note: you probably don't want to change it)
 - **Type:** String
-- **Required:** No (default: `ghcr.io/yuviherziger/tomodo`)
+- **Required:** No (default: `mongodb/mongodb-atlas-local`)
 - **Example:**
 
     ```shell
-    tomodo provision atlas --image-repo "ghcr.io/yuviherziger/tomodo"
+    tomodo provision atlas --image-repo "mongodb/mongodb-atlas-local"
     ```
 
 **`--image-tag`**

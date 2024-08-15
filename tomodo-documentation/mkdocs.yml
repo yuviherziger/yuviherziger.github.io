@@ -27,8 +27,8 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: "!!python/name:pymdownx.superfences.fence_code_format"
-repo_url: https://github.com/yuviherziger/tomodo
-repo_name: yuviherziger/tomodo
+repo_url: https://github.com/yuvalherziger/tomodo
+repo_name: yuvalherziger/tomodo
 theme:
   icon:
     repo: fontawesome/brands/github
