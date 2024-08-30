@@ -17,8 +17,17 @@ brew install tomodo
 
 After installing the tool with `brew`, you can run it the following way:
 
-```bash
+```shell
 tomodo --help
+```
+
+### Upgrade Homebrew Package
+
+To upgrade the `tomodo` Homebrew package to the latest version, use the following commands:
+
+```shell
+brew update
+brew upgrade tomodo
 ```
 
 ## Install with pip
@@ -44,7 +53,7 @@ the Python installation is by using the [Poetry](https://python-poetry.org/) Pyt
 If you have the [Poetry](https://python-poetry.org/) Python package manager installed locally, you can install
 the CLI the following way:
 
-```bash
+```shell
 git clone https://github.com/yuvalherziger/tomodo.git
 cd tomodo
 poetry shell
@@ -53,7 +62,7 @@ poetry install
 
 After installing the tool with Poetry, you can run it the following way:
 
-```bash
+```shell
 tomodo --help
 ```
 
@@ -61,7 +70,7 @@ tomodo --help
 
 You can install the dependencies with pip using the following command:
 
-```bash
+```shell
 git clone https://github.com/yuvalherziger/tomodo.git
 cd tomodo
 pip install .
@@ -69,6 +78,6 @@ pip install .
 
 After installing the dependencies with pip, you can validate the installation by invoking the help page:
 
-```bash
+```shell
 python tomodo/cmd.py --help
 ```
