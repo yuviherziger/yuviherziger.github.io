@@ -126,7 +126,7 @@ tomodo ops-manager add-server <OPS_MANAGER_NAME>
 
 **`--api-key`**
 
-- **Description:** The Ops Manager project ID.
+- **Description:** The Ops Manager Agent API key.
 - **Type:** String
 - **Required:** Yes
 - **Example:**
