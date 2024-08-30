@@ -1,6 +1,6 @@
 # tomodo ops-manager
 
-Removes a single deployment or all deployments permanently.
+Manage MongoDB Ops Manager deployments
 
 ## Subcommands
 
