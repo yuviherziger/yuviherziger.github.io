@@ -9,6 +9,7 @@ nav:
       - stop: cli/stop.md
       - start: cli/start.md
       - remove: cli/remove.md
+      - Ops Manager: cli/ops-manager
       - tags: cli/tags.md
   - GitHub Actions: gh-actions.md
   - Examples: examples.md
