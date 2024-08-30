@@ -532,6 +532,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Examples
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -541,6 +552,52 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#create-a-sharded-cluster" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create a sharded cluster
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-an-atlas-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create an Atlas deployment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-an-ops-manager-deployment-and-add-servers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create an Ops Manager deployment and add servers
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -626,6 +683,41 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#create-a-sharded-cluster" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create a sharded cluster
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-an-atlas-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create an Atlas deployment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-an-ops-manager-deployment-and-add-servers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create an Ops Manager deployment and add servers
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -643,7 +735,33 @@
 
 
 <h1 id="usage-examples">Usage Examples</h1>
-<p>To be added soon.</p>
+<h2 id="create-a-sharded-cluster">Create a sharded cluster</h2>
+<div class="highlight"><pre><span></span><code><span class="c1"># Overriding some of the default values</span>
+tomodo<span class="w"> </span>provision<span class="w"> </span>sharded<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--replicas<span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--shards<span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--mongos<span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--config-servers<span class="w"> </span><span class="m">3</span>
+</code></pre></div>
+<h2 id="create-an-atlas-deployment">Create an Atlas deployment</h2>
+<div class="highlight"><pre><span></span><code>tomodo<span class="w"> </span>provision<span class="w"> </span>atlas<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--username<span class="w"> </span>admin<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--password<span class="w"> </span>supersecret
+</code></pre></div>
+<h2 id="create-an-ops-manager-deployment-and-add-servers">Create an Ops Manager deployment and add servers</h2>
+<p>Run the following command:</p>
+<div class="highlight"><pre><span></span><code>tomodo<span class="w"> </span>ops-manager<span class="w"> </span>create<span class="w"> </span>--name<span class="w"> </span>my-mms
+</code></pre></div>
+<p>Log into your Ops Manager deployment via <a href="http://localhost:80/account/register">http://localhost:80/account/register</a>,
+create your first Ops Manager user, and then go ahead and create an Agent API key
+(see <a href="https://www.mongodb.com/docs/ops-manager/current/tutorial/manage-agent-api-key/">instructions</a>).</p>
+<p>Keep your project ID and agent API key, then create as many empty deployment servers as you like. For example:</p>
+<div class="highlight"><pre><span></span><code>tomodo<span class="w"> </span>ops-manager<span class="w"> </span>add-server<span class="w"> </span>my-mms<span class="w"> </span>--count<span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--project-id<span class="w"> </span>&lt;PROJECT_ID&gt;<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--api-key<span class="w"> </span>&lt;AGENT_API_KEY&gt;
+</code></pre></div>
+<p>Take note of the ports displayed in the logs of the command above.  These are the ports you can use in your
+deployment.</p>
 
 
 
